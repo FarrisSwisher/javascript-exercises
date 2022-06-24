@@ -32,11 +32,7 @@ const factorial = function(num) {
 	if (num === 0) return 1;
   else if (num === 1) return 1;
   else if (num === 2) return 2;
-  let temp = 1;
-  for (let i = 0; i<num; i++){
-    temp *= num - i;
-  }
-  return temp;
+  else return num * factorial(num-1); 
 };
 
 // Do not edit below this line
